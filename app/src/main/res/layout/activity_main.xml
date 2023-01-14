@@ -1,54 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content_controls"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E7EAEB"
     android:orientation="vertical"
-    android:visibility="visible"
-    tools:context=".MainActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="411dp"
-        android:layout_height="71dp"
-        android:background="#EEDD5F"
-        tools:ignore="MissingConstraints" />
-
+    android:visibility="visible">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/main_searchButton"
+
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
-        android:layout_weight="2"
-        android:onClick="startScanBleActivity"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="4dp"
-        app:cardPreventCornerOverlap="false">
+        app:cardCornerRadius="20dp"
+        tools:context=".MainActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="295dp"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_marginStart="120sp"
+            android:gravity="center"
+            android:text="@string/menu_Blu"
+            android:textSize="30sp" />
 
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="3"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="hello world"
-                android:textSize="24sp" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="127dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+
+            app:srcCompat="@drawable/bluetooth"
+            tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
 
     </androidx.cardview.widget.CardView>
-
-
-
-
-
 </LinearLayout>
